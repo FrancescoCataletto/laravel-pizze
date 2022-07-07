@@ -1,6 +1,6 @@
 <?php 
 
-$pizze = [
+return[
 	[
 		"nome" => "Margherita", 
 		"prezzo" => 4.5, 
