@@ -16,6 +16,7 @@ class CreatePizzasTable extends Migration
         Schema::create('pizzas', function (Blueprint $table) {
             $table->id();
             $table->string('nome');
+            $table->string('immagine');
             $table->string('slug')->unique();
             $table->integer('popolarita')->nullable();
             $table->decimal('prezzo', 8, 2);

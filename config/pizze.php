@@ -5,44 +5,51 @@ return[
 		"nome" => "Margherita", 
 		"prezzo" => 4.5, 
 		"ingredienti" => "Pomodoro, Mozzarella", 
-		"vegetariana" => "sì" 
+		"vegetariana" => "sì",
+		"immagine" => "https://www.buttalapasta.it/wp-content/uploads/2017/11/pizza-margherita.jpg" 
     ], 
 	[
 		"nome" => "Tonno & Cipolla", 
 		"prezzo" => 7.5, 
 		"ingredienti" => "Pomodoro, Mozzarella, Tonno, Cipolla", 
-		"vegetariana" => "no" 
+		"vegetariana" => "no",
+		"immagine" => "https://www.bofrost.ch/writable/products/images-v2/15196.jpg" 
 	], 
 	[
 		"nome" => "Prosciutto & Funghi", 
 		"prezzo" => 5.5, 
 		"ingredienti" => "Pomodoro, Mozzarella, Prosciutto Cotto, Funghi", 
-		"vegetariana" => "no" 
+		"vegetariana" => "no",
+		"immagine" => "https://www.ristorantelapista.it/photogallery/picture-11/0x0x90/prosciutto-e-funghi.jpg" 
 	], 
 	[
 		"nome" => "Quattro Formaggi", 
 		"prezzo" => 8, 
 		"popolarita" => 6, 
 		"ingredienti" => "Mozzarella, Gorgonzola, Emmental, Asiago", 
-		"vegetariana" => "sì" 
+		"vegetariana" => "sì",
+		"immagine" => "https://blog.giallozafferano.it/zeroglutine/wp-content/uploads/2020/04/IMG_5544-720x411.jpg" 
 	], 
 	[
 		"nome" => "Wurstel", 
 		"prezzo" => 5, 
 		"ingredienti" => "Pomodoro, Mozzarella, Wurstel", 
-		"vegetariana" => "no" 
+		"vegetariana" => "no",
+		"immagine" => "https://media-cdn.tripadvisor.com/media/photo-s/0e/ac/1a/1c/pizza-wurstel.jpg" 
 	], 
 	[
 		"nome" => "Diavola", 
 		"prezzo" => 6, 
 		"ingredienti" => "Pomodoro, Mozzarella, Salamino Piccante", 
-		"vegetariana" => "no" 
+		"vegetariana" => "no",
+		"immagine" => "https://www.misya.info/wp-content/uploads/2007/08/Pizza-alla-diavola.jpg" 
 	], 
 	[
 		"nome" => "Capricciosa", 
 		"prezzo" => 7.5, 
 		"ingredienti" => "Pomodoro, Mozzarella, Prosciutto Cotto, Funghi, Carciofi, Olive", 
-		"vegetariana" => "no" 
+		"vegetariana" => "no",
+		"immagine" => "https://www.italianstylecooking.net/wp-content/uploads/2022/01/Pizza-capricciosa.jpg" 
 	] 
 ]; 
  

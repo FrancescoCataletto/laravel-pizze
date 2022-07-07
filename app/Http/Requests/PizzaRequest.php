@@ -25,6 +25,7 @@ class PizzaRequest extends FormRequest
     {
         return [
             'nome' => 'required|max:255|min:3',
+            'immagine' => 'required|max:255',
             'prezzo' => 'required|numeric',
             'popolarita' => 'integer',
             'ingredienti' => 'required|max:255|min:10|',
@@ -36,6 +37,9 @@ class PizzaRequest extends FormRequest
             'nome.require' => 'Il nome è obbligatorio',
             'nome.max' => 'Il nome deve essere lungo al massimo :max carattere',
             'nome.min' => 'Il nome deve essere lungo almeno :min carattere',
+            
+            'immagine.require' => 'Il campo immagine è obbligatorio',
+            'immagine.max' => 'Il campo immagine deve essere lungo al massimo :max carattere',
 
             'prezzo.required' => 'Il prezzo è obbligatorio',
             'prezzo.numeric' => 'Il prezzo deve essere un numero',

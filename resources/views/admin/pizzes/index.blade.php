@@ -1,6 +1,8 @@
 @extends('layouts.app')
 
 @section('content')
+
+
 <div class="container">
     @if (session('pizza_cancellato'))
         <div class="alert alert-success">
@@ -38,7 +40,7 @@
                     <td>
                         <a href="{{route('admin.pizzas.show', $pizza)}}" class="btn btn-primary">SHOW</a>
                         <a href="{{route('admin.pizzas.edit', $pizza)}}" class="btn btn-success">EDIT</a>
-                        <form class="d-inline" action="{{route('admin.pizzas.destroy', $pizza)}}" method="POST" onsubmit="return confirm('Confermi l\'eliminazione di: {{$pizza->nome}}')">
+                        <form class="d-inline" action="{{route('admin.pizzas.destroy', $pizza)}}" method="POST"  onsubmit="return confirm('Sei sicuro di voler cancellare la pizza : {{$pizza->nome}}')">
                             @csrf
                             @method('DELETE')
                             <button type="submit" class="btn btn-danger">DELETE</button>

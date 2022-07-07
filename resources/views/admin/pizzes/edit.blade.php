@@ -31,6 +31,19 @@
         </div>
 
         <div class="form-group">
+          <label for="immagine">Immagine</label>
+          <input type="text" 
+          class="form-control
+          @error('immagine') is-invalid
+          @enderror" 
+          id="immagine" name="immagine" 
+          value="{{old('immagine', $pizza->immagine)}}" placeholder="immagine pizza">
+          @error('immagine')
+              <p class="text-danger">{{$message}}</p>
+          @enderror
+        </div>
+
+        <div class="form-group">
           <label for="prezzo">Prezzo</label>
           <input type="text" 
           class="form-control

@@ -16,7 +16,8 @@ class PizzasTableSeeder extends Seeder
         foreach($pizzas as $pizza){
             $new_pizza = new Pizza();
 
-            $new_pizza->nome = $pizza['nome']; 
+            $new_pizza->nome = $pizza['nome'];
+            $new_pizza->immagine = $pizza['immagine']; 
             $new_pizza->slug = Pizza::slugGenerator($new_pizza->nome);
             if(!empty($pizza['popolarita'])){
                 $new_pizza->popolarita = $pizza['popolarita'];

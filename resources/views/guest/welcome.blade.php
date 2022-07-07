@@ -6,6 +6,8 @@
 
         <title>Laravel</title>
 
+        <!-- CSS-->
+        <link rel="stylesheet" href="{{asset('css/app.css')}}">
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
 
@@ -64,7 +66,7 @@
         </style>
     </head>
     <body>
-        <div class="flex-center position-ref full-height">
+        {{-- <div class="flex-center position-ref full-height">
             @if (Route::has('login'))
                 <div class="top-right links">
                     @auth
@@ -78,10 +80,20 @@
                     @endauth
                 </div>
             @endif
-
-            <div class="content">
-                <h1>PIZZERIA DA MARIO</h1>
-            </div>
+        </div> --}}
+        <div class="container d-flex flex-wrap pizze">
+            @foreach ($pizzas as $pizza)
+                <div class="card pizza text-center" style="width: 18rem;">
+                    <img src="{{$pizza->immagine}}" class="card-img-top" alt="{{$pizza->nome}}">
+                    <div class="card-body">
+                    <h5 class="card-title">{{$pizza->nome}}</h5>
+                    <h6 class="card-text">{{$pizza->prezzo}}</p>
+                    <p class="card-text">{{$pizza->popolarita}}</p>
+                    <p class="card-text">{{$pizza->ingredienti}}</p>
+                    <p class="card-text">{{$pizza->vegetariana}}</p>
+                    </div>
+                </div>
+            @endforeach
         </div>
     </body>
 </html>
