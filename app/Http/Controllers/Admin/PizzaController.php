@@ -101,6 +101,6 @@ class PizzaController extends Controller
     {
         $pizza->delete();
 
-        return redirect()->route('admin.pizzas.index');
+        return redirect()->route('admin.pizzas.index')->with('pizza_cancellato', "Hai cancellato correttamente la pizza: $pizza->nome");
     }
 }

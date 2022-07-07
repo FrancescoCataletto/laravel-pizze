@@ -20,6 +20,6 @@
     </div>
     <div class="container">
         <a href="{{ route('admin.pizzas.index')}}" class="btn btn-secondary">INDIETRO</a>
-        <a href="" class="btn btn-primary">EDIT</a>
+        <a href="{{route('admin.pizzas.edit', $pizza)}}" class="btn btn-primary">EDIT</a>
     </div>
 @endsection

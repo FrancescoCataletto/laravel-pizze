@@ -2,6 +2,12 @@
 
 @section('content')
 <div class="container">
+    @if (session('pizza_cancellato'))
+        <div class="alert alert-success">
+            {{session('pizza_cancellato')}}
+        </div>
+    @endif
+
     <table class="table">
         <thead>
           <tr>
