@@ -18,6 +18,9 @@ class PizzasTableSeeder extends Seeder
 
             $new_pizza->nome = $pizza['nome']; 
             $new_pizza->slug = Pizza::slugGenerator($new_pizza->nome);
+            if(!empty($pizza['popolarita'])){
+                $new_pizza->popolarita = $pizza['popolarita'];
+            };
             $new_pizza->prezzo = $pizza['prezzo']; 
             $new_pizza->ingredienti = $pizza['ingredienti'];
             if($pizza['vegetariana'] === "sì"){
