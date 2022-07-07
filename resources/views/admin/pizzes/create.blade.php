@@ -2,6 +2,17 @@
 
 @section('content')
 <div class="container">
+
+    @if ($errors->any())
+      <div class="alert alert-danger">
+        <ul class="m-0 p-0">
+          @foreach ($errors->all() as $error)
+            <li>{{ $error }}</li>
+          @endforeach
+        </ul>
+      </div>
+    @endif
+
     <form action="{{ route('admin.pizzas.store') }}" method="POST">
         @csrf
 
