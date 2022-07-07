@@ -9,7 +9,13 @@
                 <li>Popolarità: {{$pizza->popolarita}}</li>
             @endif
             <li>Ingredienti: {{$pizza->ingredienti}}</li>
-            <li>Vegetariana: {{$pizza->vegetariana}}</li>
+            <li>Vegetariana: 
+                @if ($pizza->vegetariana === 0)
+                    NO
+                @else
+                    SI
+                @endif
+            </li>
         </ul>
     </div>
     <div class="container">

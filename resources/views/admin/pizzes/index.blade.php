@@ -31,7 +31,7 @@
                     </td>
                     <td>
                         <a href="{{route('admin.pizzas.show', $pizza)}}" class="btn btn-primary">SHOW</a>
-                        <a href="" class="btn btn-success">EDIT</a>
+                        <a href="{{route('admin.pizzas.edit', $pizza)}}" class="btn btn-success">EDIT</a>
                         <a href="" class="btn btn-danger">DELETE</a>
                     </td>
                 </tr>
