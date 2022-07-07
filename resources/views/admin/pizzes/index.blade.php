@@ -32,7 +32,11 @@
                     <td>
                         <a href="{{route('admin.pizzas.show', $pizza)}}" class="btn btn-primary">SHOW</a>
                         <a href="{{route('admin.pizzas.edit', $pizza)}}" class="btn btn-success">EDIT</a>
-                        <a href="" class="btn btn-danger">DELETE</a>
+                        <form action="{{route('admin.pizzas.destroy', $pizza)}}" method="POST" onsubmit="return confirm('Confermi l\'eliminazione di: {{$pizza->nome}}')">
+                            @csrf
+                            @method('DELETE')
+                            <button type="submit" class="btn btn-danger">DELETE</button>
+                        </form>
                     </td>
                 </tr>
             @endforeach
