@@ -19,7 +19,7 @@
                 <tr>
                     <td>{{$pizza->id}}</td>
                     <td>{{$pizza->nome}}</td>
-                    <td>{{$pizza->prezzo}}</td>
+                    <td>{{$pizza->prezzo}}€</td>
                     <td>{{$pizza->ingredienti}}</td>
                     <td>{{$pizza->popolarita}}</td>
                     <td>
@@ -30,7 +30,7 @@
                         @endif
                     </td>
                     <td>
-                        <a href="" class="btn btn-primary">SHOW</a>
+                        <a href="{{route('admin.pizzas.show', $pizza)}}" class="btn btn-primary">SHOW</a>
                         <a href="" class="btn btn-success">EDIT</a>
                         <a href="" class="btn btn-danger">DELETE</a>
                     </td>
