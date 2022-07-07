@@ -6,6 +6,15 @@ use Illuminate\Database\Eloquent\Model;
 
 class Pizza extends Model
 {
+    protected $fillable = [
+        'nome',
+        'prezzo',
+        'popolarita',
+        'vegetariana',
+        'ingredienti',
+        'slug',
+    ];
+
     public static function slugGenerator($nome){
         $slug = Str::slug($nome, '-');
         $original_slug = $slug;
